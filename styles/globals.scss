@@ -1,5 +1,6 @@
-@use "variables" as variable;
-@use "mixins" as mixin;
+@use 'variables' as variable;
+@use 'mixins' as mixin;
+
 html,
 body {
   padding: 0;
@@ -8,7 +9,7 @@ body {
 }
 
 a {
-  @include mixin.anchorStyles();
+  @include mixin.anchor-styles;
 }
 
 * {
@@ -19,6 +20,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
